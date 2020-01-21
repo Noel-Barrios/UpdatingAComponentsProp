@@ -5,7 +5,7 @@ import React from "react";
 // }
 
 const Child = props => {
-  return <h1>Child</h1>;
+  return <p>Child</p>;
 };
 
 export default Child;

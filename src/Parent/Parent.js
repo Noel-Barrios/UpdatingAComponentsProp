@@ -1,7 +1,14 @@
 import React from "react";
+import Child from "./../Child/Child";
 
 export default class Parent extends React.Component {
   render() {
-    return <h1>Parent</h1>;
+    return (
+      <div>
+        <h1>Parent</h1>
+
+        <Child></Child>
+      </div>
+    );
   }
 }
