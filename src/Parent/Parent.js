@@ -12,7 +12,17 @@ export default class Parent extends React.Component {
 
   render() {
     return (
-      <div className="ParentContainer">
+      <div
+        className="ParentContainer"
+        style={{
+          background:
+            this.state.parentName === "Parent"
+              ? "linear-gradient(to bottom, #7892c2 5%, #476e9e 100%)"
+              : this.state.parentName === "Father"
+              ? "teal"
+              : "pink"
+        }}
+      >
         <h1>{this.state.parentName}</h1>
 
         <Child
